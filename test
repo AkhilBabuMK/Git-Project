@@ -1,0 +1,4 @@
+import math
+int a,b
+if a+b == 10 :
+   return success
