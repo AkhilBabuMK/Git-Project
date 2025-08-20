@@ -17,6 +17,7 @@ const Product = mongoose.model("Product", {
 });
 
 // Middleware for JWT auth
+
 function authenticateToken(req, res, next) {
   const token = req.headers["authorization"];
   if (!token) return res.sendStatus(401);
