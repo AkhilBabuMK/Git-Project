@@ -13,7 +13,7 @@ const userSchema = new mongoose.Schema({
   balance: { type: Number, default: 0 }
 });
 
-// Transaction Schem
+// Transaction Schema
 const transactionSchema = new mongoose.Schema({
   sender: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
   receiver: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
